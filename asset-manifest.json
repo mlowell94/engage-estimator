@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/engage-estimator/static/css/main.4803d686.css",
+    "main.js": "/engage-estimator/static/js/main.7c361df1.js",
+    "static/media/FEE_Sommie.png": "/engage-estimator/static/media/FEE_Sommie.05ad573c680a481cb288.png",
+    "static/media/logo.png": "/engage-estimator/static/media/logo.0943f4ade639eeacf36a.png",
+    "static/media/century-gothic-grassetto.ttf": "/engage-estimator/static/media/century-gothic-grassetto.861d22617fdfce5fc922.ttf",
+    "static/media/Lythos_crest.webp": "/engage-estimator/static/media/Lythos_crest.ed5b3d5b9455e4340ecb.webp",
+    "static/media/background.jpg": "/engage-estimator/static/media/background.6c37bd4681461ab76f08.jpg",
+    "static/media/Nobile-Regular.ttf": "/engage-estimator/static/media/Nobile-Regular.ee77ca2690ff5ae95df9.ttf",
+    "static/media/lindwurm.png": "/engage-estimator/static/media/lindwurm.03904d8b6f7d22dba7df.png",
+    "static/media/wyvern-knight.png": "/engage-estimator/static/media/wyvern-knight.b27c8825cc9072ed4bb9.png",
+    "static/media/griffin-knight.png": "/engage-estimator/static/media/griffin-knight.13b7103749a88c5cd734.png",
+    "static/media/sleipnir-rider.png": "/engage-estimator/static/media/sleipnir-rider.2ea4906bd40ffce5b27a.png",
+    "static/media/cupido.png": "/engage-estimator/static/media/cupido.c4f42ac5c022c0223b5f.png",
+    "static/media/great-knight.png": "/engage-estimator/static/media/great-knight.8ee6e478e98e6d23032d.png",
+    "static/media/avenir.png": "/engage-estimator/static/media/avenir.a06562a0a64c1d5bb364.png",
+    "static/media/royal-knight.png": "/engage-estimator/static/media/royal-knight.9071ae63516d5841cd57.png",
+    "static/media/paladin.png": "/engage-estimator/static/media/paladin.8fdfb530e6f16d56228f.png",
+    "static/media/bow-knight.png": "/engage-estimator/static/media/bow-knight.93171b717fa6187a2be7.png",
+    "static/media/mage-knight.png": "/engage-estimator/static/media/mage-knight.5020b6ae789039b337ec.png",
+    "static/media/general.png": "/engage-estimator/static/media/general.9597d5b2a0436eeb5594.png",
+    "static/media/wolf-knight.png": "/engage-estimator/static/media/wolf-knight.6696762cb3478edbfa59.png",
+    "static/media/vidame.png": "/engage-estimator/static/media/vidame.af869e6f3b96864b1844.png",
+    "static/media/picket.png": "/engage-estimator/static/media/picket.66b37b172850f2d278e3.png",
+    "index.html": "/engage-estimator/index.html",
+    "static/media/chevron-left.svg": "/engage-estimator/static/media/chevron-left.a021d660dbfd4b45c8330b845006fd5b.svg",
+    "static/media/chevron-right.svg": "/engage-estimator/static/media/chevron-right.5e22b31e2024a9f9817c57085e8bad13.svg",
+    "main.4803d686.css.map": "/engage-estimator/static/css/main.4803d686.css.map",
+    "main.7c361df1.js.map": "/engage-estimator/static/js/main.7c361df1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4803d686.css",
+    "static/js/main.7c361df1.js"
+  ]
+}
