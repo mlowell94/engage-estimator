@@ -367,9 +367,13 @@ input:focus ~ .bar{
   border: none;
   padding: 0;
   text-align: left;
-  background: linear-gradient(270deg, #0144bb 0%, #f90612 100%);  ;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
+  text-align: center;
+  font-style: inherit;
+  padding: 6px;
+  width: 100%;
+  border-radius: 6px;
+  background-color: #071a2e85;
 }
 
 @media screen and (max-width: 1090px){
