@@ -20,7 +20,7 @@ const ResultInterface = (props) => {
           </select>
         </div>
         <h2><span>{props.currentPromote.name}</span>
-          <span id="result-icon-container"><img src = {require('../assets/' + props.currentPromote.name.toLowerCase().replace(' ', '-') + '.png')} alt={props.currentPromote.name}/></span>
+          <span id="result-icon-container"><img src = {require('../assets/' + props.currentPromote.name.toLowerCase().replace(' ', '-').replace('é', 'e') + '.png').replace('é', 'e')} alt={props.currentPromote.name}/></span>
         </h2>
         <h2>Level 20</h2>
         <ResultOutput currentPromote = {props.currentPromote} />
