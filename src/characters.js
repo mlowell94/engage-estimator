@@ -153,7 +153,7 @@ const characters = {
         },
         unique: false
     },
-    "Céline" : {
+    "Celine" : {
         Hp: 50,
         Str: 35,
         Mag: 25,
@@ -175,7 +175,7 @@ const characters = {
         },
         unique: "Vidame"
     },
-    "Chloé" : {
+    "Chloe" : {
         Hp: 75,
         Str: 25,
         Mag: 35,
@@ -262,7 +262,7 @@ const characters = {
             Res: -2,
             Lck: -1,
         },
-        unique: "Tireur d'élite"
+        unique: "Tireur d'elite"
     },
     "Citrinne" : {
         Hp: 45,

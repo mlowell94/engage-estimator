@@ -119,8 +119,8 @@ const promotes = {
         },
         unique: true,
     },
-    "Tireur d'élite" : {
-        name: "Tireur d'élite",
+    "Tireur d'elite" : {
+        name: "Tireur d'elite",
         Hp: 10,
         Str: 10,
         Mag: 0,

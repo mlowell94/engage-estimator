@@ -56,7 +56,6 @@ let calculator = (() => {
         for (let i = 2; i < Object.keys(averagedClass).length; i += 1) {
             newRating += averagedClass[Object.keys(averagedClass)[i]]
         }
-        console.log(averagedClass.HP)
         averagedClass.rating = newRating;
         return averagedClass;
     }
