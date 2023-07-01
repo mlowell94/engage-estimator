@@ -153,7 +153,7 @@ const characters = {
         },
         unique: false
     },
-    "Celine" : {
+    "Céline" : {
         Hp: 50,
         Str: 35,
         Mag: 25,
@@ -175,7 +175,7 @@ const characters = {
         },
         unique: "Vidame"
     },
-    "Chloe" : {
+    "Chloé" : {
         Hp: 75,
         Str: 25,
         Mag: 35,
@@ -262,7 +262,7 @@ const characters = {
             Res: -2,
             Lck: -1,
         },
-        unique: "Tireur d'elite"
+        unique: "Tireur d'élite"
     },
     "Citrinne" : {
         Hp: 45,
@@ -789,6 +789,117 @@ const characters = {
             Def: 0,
             Res: 0,
             Lck: 1,
+        },
+        unique: false,
+        isJean: true
+    },
+    "Nel" : {
+        Hp: 55,
+        Str: 30,
+        Mag: 25,
+        Dex: 40,
+        Spd: 45,
+        Def: 30,
+        Res: 35,
+        Lck: 30,
+        Bld: 10,
+        chapter: 'DLC',
+        maxMod: {
+            Str: 0,
+            Mag: 0,
+            Dex: 0,
+            Spd: 0,
+            Def: 0,
+            Res: 0,
+            Lck: 0,
+        },
+        unique: "Fell Child (Nel)"
+    },
+    "Nil" : {
+        Hp: 70,
+        Str: 40,
+        Mag: 10,
+        Dex: 40,
+        Spd: 35,
+        Def: 45,
+        Res: 20,
+        Lck: 10,
+        Bld: 10,
+        chapter: 'DLC',
+        maxMod: {
+            Str: 0,
+            Mag: 0,
+            Dex: 0,
+            Spd: 0,
+            Def: 0,
+            Res: 0,
+            Lck: 0,
+        },
+        unique: "Fell Child (Nil)"
+    },
+    "Zelestia" : {
+        Hp: 60,
+        Str: 35,
+        Mag: 35,
+        Dex: 35,
+        Spd: 50,
+        Def: 30,
+        Res: 35,
+        Lck: 20,
+        Bld: 5,
+        chapter: 'DLC',
+        maxMod: {
+            Str: 0,
+            Mag: 1,
+            Dex: 0,
+            Spd: 2,
+            Def: 1,
+            Res: 1,
+            Lck: -3,
+        },
+        unique: "Melusine"
+    },
+    "Gregory" : {
+        Hp: 55,
+        Str: 30,
+        Mag: 50,
+        Dex: 20,
+        Spd: 25,
+        Def: 35,
+        Res: 50,
+        Lck: 25,
+        Bld: 5,
+        chapter: 'DLC',
+        maxMod: {
+            Str: -2,
+            Mag: 3,
+            Dex: -2,
+            Spd: -2,
+            Def: 0,
+            Res: 3,
+            Lck: 2,
+        },
+        unique: false
+    },
+    "Madeline" : {
+        Hp: 75,
+        Str: 50,
+        Mag: 20,
+        Dex: 15,
+        Spd: 15,
+        Def: 55,
+        Res: 25,
+        Lck: 25,
+        Bld: 10,
+        chapter: 'DLC',
+        maxMod: {
+            Str: 3,
+            Mag: 0,
+            Dex: -2,
+            Spd: -2,
+            Def: 3,
+            Res: -1,
+            Lck: 0,
         },
         unique: false
     },

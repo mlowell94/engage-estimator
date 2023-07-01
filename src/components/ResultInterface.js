@@ -1,34 +1,39 @@
-import React from 'react'
+import React  from 'react'
 import ResultOutput from './ResultOutput'
-import left from '../assets/chevron-left.svg'
-import right from '../assets/chevron-right.svg'
+import { AnimatePresence, motion } from 'framer-motion'
 
 const ResultInterface = (props) => {
-  if  (!props.currentPromote) {
-    return (
-      <div className='results'>
-        <span className='waiting'>Waiting for input...</span>
-      </div>
-    )
-  }
   return (
-    <div className='results'>
-        <div className='stat-container' id='chapter'>
-          <label htmlFor="jump-to">Jump to:</label>
-          <select name="jump-to"onChange={(e) => props.jumpTo(props.results.indexOf(props.results.find(element => element.name === e.target.value)))}>
-            {props.results.map(promote => <option key={promote.name}>{promote.name}</option>)}
-          </select>
+    <AnimatePresence mode='wait'>
+      {!props.currentPromote ?       
+      <div className='results' id={props.resultsShown ? 'active' : ''}>
+          <span className='waiting'>Waiting for input...</span>
+      </div> :     
+      <div className='results' id={props.resultsShown ? 'active' : ''}>
+        <div>
+        {props.results ?
+        <div className='class-select'>
+          <AnimatePresence>
+            {props.results.map((item, index) => 
+            <motion.div 
+            className='class'
+            initial={{opacity: 0, x: 100}}
+            animate={{opacity: 1, x: 0}}
+            exit={{opacity: 0, x: 100}}
+            transition={{ease: "easeInOut", duration: .15, delay: index * .025}}
+            key={props.currentChar+item.name}
+            id={props.currentPromote.name === item.name ? 'active' : ''}
+            onClick={() => props.jumpTo(props.results.indexOf(props.results.find(element => element.name === item.name)))}>
+              {item.name}
+            </motion.div>)}
+          </AnimatePresence>
+        </div> : ''}
+          <motion.div className='results-inner'>
+            <ResultOutput currentPromote = {props.currentPromote} />
+          </motion.div>
         </div>
-        <h2><span>{props.currentPromote.name}</span>
-          <span id="result-icon-container"><img src = {require('../assets/' + props.currentPromote.name.toLowerCase().replace(' ', '-') + '.png')} alt={props.currentPromote.name}/></span>
-        </h2>
-        <h2>Level 20</h2>
-        <ResultOutput currentPromote = {props.currentPromote} />
-        <div className='button-container'>
-            <img src={left} alt={"An arrow pointing left. It will bring the previously viewed promotion back"} onClick={() => props.goBack()}/>
-            <img src={right} alt={"An arrow pointing right. It will bring the next promotion into view"} onClick={() => props.goForward()}/>
-        </div>
-    </div>
+      </div>}
+    </AnimatePresence>
   )
 }
 

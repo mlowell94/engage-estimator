@@ -1,6 +1,6 @@
 # What is this?
 
-A companion tool for Fire Emblem: Engage that allows you to simulate character's stats once they've reached level cap built using React.
+A companion tool for Fire Emblem: Engage that allows you to simulate character's stats once they've reached level cap built using React. This updated version features a new layout and DLC characters/classes.
 
 ## What is Fire Emblem?
 
@@ -20,14 +20,10 @@ When the user presses "Estimate" the app will take the current stat spread and c
 
 ### Other Features 
 
-* Chapter selection so you won't accidentally spoil yourself using the app!
-* Character and class sprites!
-    * Character sprites taken from fireemblemwiki.org
-    * Class sprites ripped by me :)
+* Chapter selection so you won't accidentally spoil yourself
+* Character profile images
 * Mobile friendly!
 
-### To-dos
-* Add sprites for Lindon, Saphir
-* Clean up sprites and normalize their width and height
-* Add animations for prop and state change in results
-* Add recommended Emblem lists for each class
+### Credits
+* Images taken from the Fire Emblem Wiki 
+* Font is Work Sans by Wei Huang

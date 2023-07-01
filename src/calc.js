@@ -40,17 +40,33 @@ let calculator = (() => {
     }
 
     const averageAllStats = (character, stats, promote) => { // Simulate x number of level ups to 20 and return an object simulating all stats at level 20
-        let averagedClass = {
-            name: promote.name,
-            HP: averageStat((character.Hp + promote.Hp), stats.HP, 100, (promote.caps.Hp)),
-            Str: averageStat((character.Str + promote.Str), stats.Str, 100, (promote.caps.Str + character.maxMod.Str)),
-            Mag: averageStat((character.Mag + promote.Mag), stats.Mag, 100, (promote.caps.Mag + character.maxMod.Mag)),
-            Dex: averageStat((character.Dex + promote.Dex), stats.Dex, 100, (promote.caps.Dex + character.maxMod.Dex)),
-            Spd: averageStat((character.Spd + promote.Spd), stats.Spd, 100, (promote.caps.Spd + character.maxMod.Spd)),
-            Def: averageStat((character.Def + promote.Def), stats.Def, 100, (promote.caps.Def + character.maxMod.Def)),
-            Res: averageStat((character.Res + promote.Res), stats.Res, 100, (promote.caps.Res + character.maxMod.Res)),
-            Lck: averageStat((character.Lck + promote.Lck), stats.Lck, 100, (promote.caps.Lck + character.maxMod.Lck)),
-            Bld: averageStat((character.Bld + promote.Bld), stats.Bld, 100, (promote.caps.Bld)),
+        let averagedClass;
+        if (character.isJean) {
+            averagedClass = {
+                name: promote.name,
+                HP: averageStat((character.Hp + (promote.Hp * 2)), stats.HP, 100, (promote.caps.Hp)),
+                Str: averageStat((character.Str + (promote.Str * 2)), stats.Str, 100, (promote.caps.Str + character.maxMod.Str)),
+                Mag: averageStat((character.Mag + (promote.Mag * 2)), stats.Mag, 100, (promote.caps.Mag + character.maxMod.Mag)),
+                Dex: averageStat((character.Dex + (promote.Dex *2)), stats.Dex, 100, (promote.caps.Dex + character.maxMod.Dex)),
+                Spd: averageStat((character.Spd + (promote.Spd * 2)), stats.Spd, 100, (promote.caps.Spd + character.maxMod.Spd)),
+                Def: averageStat((character.Def + (promote.Def * 2)), stats.Def, 100, (promote.caps.Def + character.maxMod.Def)),
+                Res: averageStat((character.Res + (promote.Res * 2)), stats.Res, 100, (promote.caps.Res + character.maxMod.Res)),
+                Lck: averageStat((character.Lck + (promote.Lck * 2)), stats.Lck, 100, (promote.caps.Lck + character.maxMod.Lck)),
+                Bld: averageStat((character.Bld + (promote.Bld * 2)), stats.Bld, 100, (promote.caps.Bld)),
+            }
+        } else {
+            averagedClass = {
+                name: promote.name,
+                HP: averageStat((character.Hp + promote.Hp), stats.HP, 100, (promote.caps.Hp)),
+                Str: averageStat((character.Str + promote.Str), stats.Str, 100, (promote.caps.Str + character.maxMod.Str)),
+                Mag: averageStat((character.Mag + promote.Mag), stats.Mag, 100, (promote.caps.Mag + character.maxMod.Mag)),
+                Dex: averageStat((character.Dex + promote.Dex), stats.Dex, 100, (promote.caps.Dex + character.maxMod.Dex)),
+                Spd: averageStat((character.Spd + promote.Spd), stats.Spd, 100, (promote.caps.Spd + character.maxMod.Spd)),
+                Def: averageStat((character.Def + promote.Def), stats.Def, 100, (promote.caps.Def + character.maxMod.Def)),
+                Res: averageStat((character.Res + promote.Res), stats.Res, 100, (promote.caps.Res + character.maxMod.Res)),
+                Lck: averageStat((character.Lck + promote.Lck), stats.Lck, 100, (promote.caps.Lck + character.maxMod.Lck)),
+                Bld: averageStat((character.Bld + promote.Bld), stats.Bld, 100, (promote.caps.Bld)),
+            }
         }
         let newRating = 0;
         for (let i = 2; i < Object.keys(averagedClass).length; i += 1) {
@@ -68,7 +84,9 @@ let calculator = (() => {
                 allClasses.push(averageAllStats(character, stats, promotes[keys[i]]));
             } else {
                 if (promotes[keys[i]].unique) {
-                    if (character.unique === promotes[keys[i]].name) {
+                    console.log(promotes[keys[i]].name)
+                    console.log(character.unique)
+                    if (character.unique === keys[i]) {
                         allClasses.push(averageAllStats(character, stats, promotes[keys[i]]));
                     }
                 }
