@@ -3,6 +3,10 @@
   border: none;
 }
 
+input[type='submit'] {
+  all: unset
+}
+
 @font-face {
   font-family: 'work-sans';
   src: url('./assets/WorkSans-VariableFont_wght.ttf');
