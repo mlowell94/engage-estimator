@@ -4,7 +4,7 @@
 }
 
 input[type='submit'] {
-  border-radius: 0;
+  -webkit-appearance: none;
 }
 
 @font-face {
