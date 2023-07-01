@@ -42,7 +42,7 @@ const ResultOutput = (props) => {
             {/* <div className='stat-container'>
                 <span className='stat-lead'>Rating: </span><span>{props.currentPromote.rating}</span>
             </div> */}
-    </motion.div>
+        </motion.div>
     </AnimatePresence>
   )
 }

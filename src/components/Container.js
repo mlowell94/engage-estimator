@@ -54,6 +54,15 @@ const Container = () => {
       setResults(false);
       setCurrent(false)
     }
+
+    const getPath = (currentChar) => {
+      if (currentChar === 'chloé') {
+        return 'chloe'
+      } else if (currentChar === 'céline') {
+        return 'celine'
+      }
+      return currentChar
+    }
   return (
 <div className='container-outer'>
     <AnimatePresence mode="wait">
@@ -64,7 +73,7 @@ const Container = () => {
           transition={{ease: "easeInOut", duration: .35}}
           className='char-img' 
           key={currentChar}
-          src={require('../assets/' + currentChar + '.webp')} alt={currentChar} id='char-icon'
+          src={require('../assets/' + getPath() + '.webp')} alt={currentChar} id='char-icon'
           onLoad={() => {setTimeout(() => { setImgLoading(false) }, 250)}}
           />
     </AnimatePresence>
