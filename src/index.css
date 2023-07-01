@@ -41,19 +41,21 @@ body {
 }
 
 .container-outer {
+  margin: auto;
+  margin-left: auto;
+  margin-right: 10vw;
+
   width: 45vw;
   height: 80vh;
   min-height: 575px;
   max-height: 935px;
   display: flex;
   flex-direction: column;
-
-  margin: auto;
 }
 
 .container-outer > img {
   position: fixed;
-  left: 0;
+  right: 50%;
   bottom: 0;
   height: 100%;
 }
@@ -636,6 +638,7 @@ canvas {
     }
 
     .container-outer img {
+      right: 0;
       height: 55%;
     }
 
