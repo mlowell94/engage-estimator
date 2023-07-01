@@ -566,7 +566,8 @@ canvas {
     top: unset;
     left: 0;
     display: flex;
-    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: auto;
     width: 330px;
 
     padding: 12px;
