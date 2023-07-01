@@ -73,7 +73,7 @@ const Container = () => {
           transition={{ease: "easeInOut", duration: .35}}
           className='char-img' 
           key={currentChar}
-          src={require('../assets/' + getPath() + '.webp')} alt={currentChar} id='char-icon'
+          src={require('../assets/' + getPath(currentChar) + '.webp')} alt={currentChar} id='char-icon'
           onLoad={() => {setTimeout(() => { setImgLoading(false) }, 250)}}
           />
     </AnimatePresence>
