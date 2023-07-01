@@ -455,6 +455,7 @@ canvas {
   }
 
   .container-outer > img {
+    right: unset;
     height: 95%;
   }
 
@@ -638,7 +639,6 @@ canvas {
     }
 
     .container-outer img {
-      right: 0;
       height: 55%;
     }
 
