@@ -4,7 +4,7 @@
 }
 
 input[type='submit'] {
-  -webkit-appearance: none;
+  -webkit-appearance: none !important;
 }
 
 @font-face {
